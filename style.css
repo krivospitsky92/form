@@ -4,32 +4,38 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 .wrapper {
   width: 500px;
   height: 700px;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: center;
   border: 1px solid rgb(175, 175, 175);
   background-color: #f2f3f7;
   position: relative;
 }
-hr::before {
+
+h1,
+h4 {
+  color: rgb(131, 131, 131);
+}
+span::before {
     content:"";
     width: 150px;
     position: absolute;
-    top:50px;
+    top:40px;
     left:20px;
     right:20px;
     border-top:solid 2px rgb(131, 131, 131);
 }
 
-hr::after {
+span::after {
   content:"";
   width: 150px;
   position: absolute;
-  top:50px;
+  top:40px;
   left:330px;
   right:20px;
   border-top:solid 2px rgb(131, 131, 131);
@@ -51,7 +57,7 @@ hr::after {
   width: 80%;
 }
 
-span {
+.term {
   color: green;
 
 }
@@ -69,7 +75,7 @@ span {
   border: 1px solid transparent;
   font-weight: 700;
 }
-ko
+
 #button:hover {
   background-color: rgb(5, 216, 5);
   box-shadow: 8px 10px 8px 0px rgba(34, 60, 80, 0.1);
