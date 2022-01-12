@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgb(175, 175, 175);
+  background-color: #f2f3f7;
+  position: relative;
+}
+hr::before {
+    content:"";
+    width: 150px;
+    position: absolute;
+    top:50px;
+    left:20px;
+    right:20px;
+    border-top:solid 2px rgb(131, 131, 131);
+}
+
+hr::after {
+  content:"";
+  width: 150px;
+  position: absolute;
+  top:50px;
+  left:330px;
+  right:20px;
+  border-top:solid 2px rgb(131, 131, 131);
+}
+
+#firstname,
+#lastname {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 10px;
+}
+
+#email,
+#password,
+#confirmpassword {
+  display: block;
+  margin: 50px;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+span {
+  color: green;
+
+}
+
+#accept {
+  text-align:left; 
+}
+
+#button {
+  width: 80%;
+  margin: 30px;
+  padding: 10px 20px;
+  background-color: rgb(3, 177, 3);
+  color: whitesmoke;
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+ko
+#button:hover {
+  background-color: rgb(5, 216, 5);
+  box-shadow: 8px 10px 8px 0px rgba(34, 60, 80, 0.1);
+}
